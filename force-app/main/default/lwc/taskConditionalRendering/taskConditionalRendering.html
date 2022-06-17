@@ -1,0 +1,60 @@
+<template>
+
+    <div class="abc">
+
+        <lightning-button variant="success" label="java" title="Successful action" onclick={java}
+            class="slds-m-left_x-small">
+        </lightning-button>
+
+        <lightning-button variant="success" label="oracle" title="Successful action" onclick={oracle}
+            class="slds-m-left_x-small">
+        </lightning-button>
+
+        <lightning-button variant="success" label="react" title="Successful action" onclick={react}
+            class="slds-m-left_x-small">
+        </lightning-button>
+
+        <template if:true={javavisble}>
+
+            <lightning-card title="java card">
+
+            
+                <img src={jimg}>
+
+               <span>{myjavavariable}</span> 
+
+            </lightning-card>
+
+        </template>
+
+        <template if:true={oraclevisble}>
+
+            <lightning-card title="oracle card">
+
+                <img src={oimg}>
+
+                <span >{myoracleable}</span> 
+
+
+            </lightning-card>
+
+        </template>
+
+        <template if:true={reactvisble}>
+
+
+            <lightning-card title="react card">
+
+
+                <img src={rimg}>
+
+                <span>{myreactvariable}</span> 
+           
+
+            </lightning-card>
+
+        </template>
+
+    </div>
+
+</template>

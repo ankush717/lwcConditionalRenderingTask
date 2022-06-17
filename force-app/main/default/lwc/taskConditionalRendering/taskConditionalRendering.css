@@ -1,0 +1,12 @@
+.abc
+{
+    height:300px;
+    width:100%;
+    background-color:black;
+}
+
+span{
+
+    position: relative;
+    left:60px;
+}

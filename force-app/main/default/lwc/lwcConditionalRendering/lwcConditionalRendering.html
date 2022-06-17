@@ -1,0 +1,20 @@
+<template>
+
+    <div class="abc">
+        <lightning-button variant="success" label={dynamiclabel} title="Successful action" onclick={changeLBL}
+            class="slds-m-left_x-small">
+
+        </lightning-button>
+    </div>
+      
+    <template if:true={cardvisible}> 
+
+    <lightning-card title="conditional rendering example">
+
+        {mytitle}
+
+    </lightning-card>
+
+</template>
+
+</template>
