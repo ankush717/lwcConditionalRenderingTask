@@ -1,0 +1,16 @@
+<template>
+
+    <lightning-card title="for each loop using wire decorator">
+    <template if:true={myproperty.data}>
+
+        <template for:each={myproperty.data} for:item="mp">
+
+            <h1 key={mp.id}> {mp.name}</h1>
+
+        </template>
+
+    </template>
+
+</lightning-card>
+
+</template>

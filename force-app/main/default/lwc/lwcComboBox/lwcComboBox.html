@@ -1,0 +1,17 @@
+<template>
+    
+
+    <lightning-card title="lwc LwcComboBox">
+
+        <lightning-combobox label="status" 
+         value={value} 
+         placeholder="select account"
+         options={options}
+         onchange={pickValueFromAccount}>
+
+        </lightning-combobox>
+
+        <p>Selected value is: <b>{value}</b></p>
+
+    </lightning-card>
+</template>

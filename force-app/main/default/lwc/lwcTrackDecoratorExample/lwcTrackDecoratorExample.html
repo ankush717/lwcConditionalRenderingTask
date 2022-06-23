@@ -1,0 +1,19 @@
+<template>
+
+    <lightning-card title="input fileds">
+
+        <lightning-input name="fname" lable="firstname" onchange={valueUpdate}></lightning-input>
+        <lightning-input name="lname" lable="lastname" onchange={valueUpdate}></lightning-input>
+
+    </lightning-card>
+
+    <lightning-card title="input fileds values using @track Decorator">
+
+        <span>first name value is <b>{fullname.fname}</b></span> <br />
+        <span>last name value is <b>{fullname.lname}</b> </span> <br/>
+       
+
+    </lightning-card>
+
+
+</template>
