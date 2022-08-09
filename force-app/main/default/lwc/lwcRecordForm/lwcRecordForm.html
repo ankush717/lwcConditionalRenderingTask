@@ -1,0 +1,54 @@
+<template>
+    
+    <lightning-card title="record form with readonly mode">
+
+        <lightning-record-form
+             object-api-name={objectApiName} 
+             columns="2"
+             fields={fields}  
+             mode="readonly"  
+             record-id={recordId}
+          
+        ></lightning-record-form>
+    
+    </lightning-card>
+
+
+    <lightning-card title="record form with view mode">
+
+        <lightning-record-form
+             object-api-name={objectApiName} 
+             columns="2"
+             fields={fields}  
+             mode="view"  
+             record-id={recordId}
+          
+        ></lightning-record-form>
+    
+    </lightning-card>
+
+    <lightning-card title="record form with edit mode">
+
+        <lightning-record-form
+             object-api-name={objectApiName} 
+             columns="2"
+             fields={fields}  
+             mode="edit"  
+             record-id={recordId}
+          
+        ></lightning-record-form>
+    
+    </lightning-card>
+
+<lightning-card title="record form with default mode">
+
+    <lightning-record-form
+         object-api-name={objectApiName} 
+         columns="2"
+         layout-type="full"         
+
+    ></lightning-record-form>
+
+</lightning-card>
+
+</template>

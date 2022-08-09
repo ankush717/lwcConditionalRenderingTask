@@ -1,0 +1,21 @@
+<template>
+
+    <lightning-card title="parent to child communication parent component">
+
+        <lightning-input class="slds-p-horizontal_small" lable="set counter" type="number" min="0" max="100000"
+            value={strtCounter} onchange={handleChange}>
+        </lightning-input>
+
+        <lightning-button class="slds-p-horizontal_small" label="add 100 on current value" onclick={handleIncrement}>
+        </lightning-button>
+
+    </lightning-card>
+
+    <lightning-card>
+
+        <c-lwc-parent-to-child-communication-child-cmp counter={startCounter}>
+        </c-lwc-parent-to-child-communication-child-cmp>
+
+    </lightning-card>
+
+</template>

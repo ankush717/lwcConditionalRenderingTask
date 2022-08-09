@@ -1,5 +1,5 @@
 import { LightningElement,track } from 'lwc';
-
+import JAVA_DEF from '@salesforce/label/c.Java_def';
 import javaimg from '@salesforce/resourceUrl/javaimage';
 
 import oracleimg from '@salesforce/resourceUrl/oracleimage';
@@ -7,7 +7,7 @@ import oracleimg from '@salesforce/resourceUrl/oracleimage';
 import reactimg from '@salesforce/resourceUrl/reactimage';
 
 export default class TaskConditionalRendering extends LightningElement {
-
+    Javadef = JAVA_DEF;
     @track javavisble=false;
 
     @track myjavavariable='java is a object oriented language';

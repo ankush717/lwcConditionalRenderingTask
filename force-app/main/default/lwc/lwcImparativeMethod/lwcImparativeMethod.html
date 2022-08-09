@@ -1,0 +1,17 @@
+<template>
+    
+    <lightning-card title="imparative call using for">
+        
+        <template if:true={data}>
+            <template for:each={data} for:item="con">
+                <p key={con.Id}>{con.Name}</p>
+            </template>
+        </template>
+
+        <p class="slds-m-bottom_small">
+            <lightning-button label="Load Contacts" onclick={handleLoad}></lightning-button>
+        </p>
+
+    </lightning-card> 
+
+</template>

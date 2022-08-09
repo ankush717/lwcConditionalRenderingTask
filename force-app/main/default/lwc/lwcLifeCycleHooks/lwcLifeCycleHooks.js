@@ -1,21 +1,36 @@
-import { LightningElement } from 'lwc';
+import { LightningElement,wire,track } from 'lwc';
+
+import websitePage from './websitePage.html';
+import errorpage from './showErrorPage.html';
+
 
 export default class LwcLifeCycleHooks extends LightningElement {
 
-constructor(){
-    super();
-    alert('parent constrcutor is runninng');
+@track error;
+@track stack;
 
 
-    //define a varable is allowed
-    let name='salesforce'
-    if(name)
+render()
+{
+
+    if(this.error==true)
     {
-        this.property='salesforce  lwc Developer';
+        return errorpage;
+    }
+    else
+    {
+        return websitePage;
+
     }
 
-    
 }
 
+    errorCallback(error,stack){
 
+        alert('errorCallback is  running from parent');
+
+       this.error=error;
+       this.stack=stack;
+    }
 }
+

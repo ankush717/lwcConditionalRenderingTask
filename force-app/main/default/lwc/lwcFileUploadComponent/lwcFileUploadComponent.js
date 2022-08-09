@@ -16,7 +16,6 @@ handleUploadFinished(event)
         // Get the list of uploaded files
         const uploadedFiles = event.detail.files;
 
-
         let uploadedFileNames = '';
 
         for(let i = 0; i < uploadedFiles.length; i++) {

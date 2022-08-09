@@ -1,0 +1,43 @@
+<template>
+  
+    <lightning-card title="Child component">
+
+        <lightning-button 
+        class="slds-p-horzontal_medium"
+         label="Substract"
+          icon-name="utility:dash"
+          onclick={handleSubstract}
+          >
+        </lightning-button>
+
+        <lightning-button 
+        class="slds-p-horzontal_medium"
+         label="Addition"
+          icon-name="utility:add"
+          onclick={handleAdd}
+          >
+        </lightning-button>
+
+        <lightning-button 
+        class="slds-p-horzontal_medium"
+         label="2"
+         value="2"
+          icon-name="utility:close"
+          onclick={handleMultiply}
+          >
+        </lightning-button>
+
+
+        <lightning-button 
+         class="slds-p-horzontal_medium"
+         label="5"
+         value="5"
+          icon-name="utility:close"
+          onclick={handleMultiply}
+          >
+        </lightning-button>
+        
+
+    </lightning-card>
+
+</template>

@@ -2,9 +2,7 @@ import { LightningElement,track } from 'lwc';
 
 export default class LwcTrackDecoratorExample extends LightningElement {
 
-
 @track fullname={fname:'', lname:'' };
-
 
 valueUpdate(event)
 {
